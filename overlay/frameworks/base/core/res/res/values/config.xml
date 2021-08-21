@@ -10,7 +10,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -241,8 +240,7 @@
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
 
     <!-- MMS user agent prolfile url -->
-    <string name="config_mms_user_agent_profile_url" translatable="false"
-            >http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
+    <string name="config_mms_user_agent_profile_url" translatable="false">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
@@ -529,17 +527,14 @@
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
          where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
          and Strength as defined in Authenticators.java -->
-    <string-array name="config_biometric_sensors" translatable="false" >
+    <string-array name="config_biometric_sensors" translatable="false">
         <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
     </string-array>
-<<<<<<< HEAD
-
+    
     <!-- Whether Hearing Aid profile is supported -->
     <bool name="config_hearing_aid_profile_supported">true</bool>
 
     <!-- Whether safe headphone volume is enabled or not (country specific). -->
     <bool name="config_safe_media_volume_enabled">false</bool>
 
-=======
->>>>>>> parent of 9010fc7 (sm6150-common: Enable zram writeback)
 </resources>
