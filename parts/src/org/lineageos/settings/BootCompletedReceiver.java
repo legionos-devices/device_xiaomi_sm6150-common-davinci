@@ -27,6 +27,7 @@ import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
+import org.lineageos.settings.display.KcalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
@@ -37,6 +38,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     	SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         if (DEBUG)
             Log.d(TAG, "Received boot completed intent");
+        if (KcalUtils.isKcalSupported())
+            KcalUtils.writeCurrentSettings(sharedPrefs);
         ThermalUtils.startService(context);
         DozeUtils.onBootCompleted(context);
     }

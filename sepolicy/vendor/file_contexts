@@ -9,6 +9,7 @@
 /sys/devices/platform/soc/[a-f0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode             u:object_r:sysfs_doze:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_status           u:object_r:sysfs_doze:s0
+/sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable u:object_r:sysfs_dm:s0
 
 # Fingerprint
 /dev/goodix_fp                                                       u:object_r:fingerprint_device:s0
@@ -21,6 +22,13 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_sm6150-ext u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sm6150        u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr         u:object_r:hal_power_default_exec:s0
+
+# Kcal
+/sys/devices/platform/kcal_ctrl.0/kcal_enable                        u:object_r:sysfs_dm:s0
+/sys/devices/platform/kcal_ctrl.0/kcal                               u:object_r:sysfs_dm:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_sat                           u:object_r:sysfs_dm:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_val                           u:object_r:sysfs_dm:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_cont                          u:object_r:sysfs_dm:s0
 
 # Remosaic
 /vendor/bin/remosaic_daemon                                          u:object_r:remosaic_daemon_exec:s0
