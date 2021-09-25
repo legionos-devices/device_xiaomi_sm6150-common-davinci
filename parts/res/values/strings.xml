@@ -71,4 +71,10 @@
     <string name="dc_dimming_end_time">End time</string>
     <string name="dc_dimming_node">/sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable</string>
 
+    <!-- Vibration -->
+    <string name="vibration_control_title">Vibration control</string>
+    <string name="vibration_control_summary">Adjust the vibration strength</string>
+    <string name="vibration_reset">The default value is set</string>
+    <string name="vibration_control_description">Define the strength of the vibration for haptic feedback, incoming call and incoming notification</string>
+
 </resources>
