@@ -82,7 +82,6 @@ on boot
 
     # Set thermal mode to evaluation
     chown system system /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 10
 
     # Set doze mode permissions
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
