@@ -113,6 +113,7 @@
         <activity
             android:name=".vibrator.VibratorSettingsActivity" 
             android:label="@string/vibration_control_title"
+            android:icon="@drawable/ic_system_vibrate"
             android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -121,7 +122,10 @@
                        android:value="com.android.settings.category.ia.system" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/vibration_control_summary" />    
+                android:resource="@string/vibration_control_summary" />
+            <meta-data
+				android:name="com.android.settings.order" 
+				android:value="7" />
         </activity>
 
     </application>
